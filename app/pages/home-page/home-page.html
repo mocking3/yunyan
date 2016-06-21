@@ -1,0 +1,96 @@
+<ion-navbar *navbar>
+    <ion-title>云燕装修</ion-title>
+</ion-navbar>
+
+<ion-content class="page1">
+    <!--轮播-->
+    <ion-slides pager style="height: 200px">
+        <ion-slide style="background-image: url('http://nos.netease.com/house-public/a6fbe7c5ba8f73f7d0f6093bd5b83539.jpg');">
+            <h2>Slide 1</h2>
+        </ion-slide>
+        <ion-slide style="background-color: blue">
+            <h2>Slide 2</h2>
+        </ion-slide>
+        <ion-slide style="background-color: red">
+            <h2>Slide 3</h2>
+        </ion-slide>
+    </ion-slides>
+    <!--  -->
+    <div class="icons-basic-page">
+        <ion-row text-center >
+            <ion-col>
+                <ion-icon name="ionic" primary></ion-icon>
+                <h2 class="title">免费服务</h2>
+            </ion-col>
+            <ion-col>
+                <ion-icon name="logo-angular"></ion-icon>
+                <h2 class="title">装修知识</h2>
+            </ion-col>
+            <ion-col>
+                <ion-icon name="heart" danger></ion-icon>
+                <h2 class="title">优惠活动</h2>
+            </ion-col>
+        </ion-row>
+    </div>
+    <!--套餐-->
+    <div class="card-image-page">
+        <h2 class="title"><ion-icon name="pricetags-outline"></ion-icon>装修套餐</h2>
+        <ion-card>
+            <div>
+                <img src="img/card-saopaolo.png"/>
+            </div>
+            <ion-item>
+                <ion-avatar item-left>
+                    <img src="img/avatar-cher.png">
+                </ion-avatar>
+                <h2>套餐A</h2>
+                <p><span>￥999/㎡</span><span class="del">￥1024/㎡</span></p>
+                <button outline item-right>
+                    <ion-icon name="clock-outline"></ion-icon>
+                    免费预约
+                </button>
+            </ion-item>
+        </ion-card>
+        <ion-card>
+            <div>
+                <img src="img/card-saopaolo.png"/>
+            </div>
+            <ion-item>
+                <ion-avatar item-left>
+                    <img src="img/avatar-cher.png">
+                </ion-avatar>
+                <h2>套餐A</h2>
+                <p><span>￥999/㎡</span><span class="del">￥1024/㎡</span></p>
+                <button outline item-right>
+                    <ion-icon name="clock-outline"></ion-icon>
+                    免费预约
+                </button>
+            </ion-item>
+        </ion-card>
+    </div>
+    <!--装修效果图-->
+    <div class="card-background-page">
+        <h2 class="title"><ion-icon name="photos-outline"></ion-icon>装修效果图</h2>
+        <ion-card>
+            <img src="img/card-saopaolo.png"/>
+            <!--<div class="card-title">São Paulo</div>-->
+            <div class="card-subtitle">地中海风格</div>
+        </ion-card>
+        <ion-card>
+            <img src="img/card-saopaolo.png"/>
+            <!--<div class="card-title">São Paulo</div>-->
+            <div class="card-subtitle">东南亚风格</div>
+        </ion-card>
+    </div>
+    <h2>Welcome to Ionic!</h2>
+    <p>
+        This starter project comes with simple tabs-based layout for apps
+        that are going to primarily use a Tabbed UI.
+    </p>
+    <p>
+        Take a look at the <code>app/</code> directory to add or change tabs,
+        update any existing page or create new pages.
+    </p>
+    <p>Want to learn some facts? Click below.</p>
+    <button (click)="goToFactsPage()">Scientific Facts</button>
+</ion-content>
